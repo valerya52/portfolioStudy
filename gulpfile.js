@@ -53,6 +53,7 @@ function startwatch() {
     watch('src/sass/*.+(scss|sass|css)', styles);
     watch('src/sass/**/*.+(scss|sass|css)', styles);
     watch('src/*.html', html);
+    watch('src/js/script.js', scripts);
     watch('src/*.html', browserSync.reload());
 }
 

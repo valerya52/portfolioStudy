@@ -1,0 +1,107 @@
+.hamburger {
+  position: absolute;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 30px;
+  top: 20px;
+  align-items: flex-end;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #151812;
+
+  }
+    span.long {
+      width: 36px;
+    }
+  &:hover {
+    height: 23px;
+    background: #8ebaf1;
+  }
+}
+
+.menu {
+  right: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 19;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: all .6s;
+
+  &.active {
+    right: 0;
+    visibility: visible;
+    opacity: 100%;
+  }
+
+  &__block{
+    position: fixed;
+    z-index: 21;
+    width: 345px;
+    height: 100%;
+    background: $mainColor;
+  }
+
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin-top: 125px;
+    margin-left: 75px;
+    font-size: 24px;
+    line-height: 36px;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+  }
+  &__social {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 50px;
+
+  }
+
+  &__link {
+    position: relative;
+    padding-top: 15px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -29px;
+      top: 25px;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #000000;
+    }
+  }
+
+  &__background{
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    opacity: .75;
+    width: 100%;
+    height: 100%;
+  }
+}

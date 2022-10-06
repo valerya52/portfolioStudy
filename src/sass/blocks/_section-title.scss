@@ -1,0 +1,31 @@
+.section-title {
+  text-align: center;
+
+  &_top {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    @include before_circle;
+    &:before {
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &_big {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  &__divider {
+    margin-top: 25px;
+    position: relative;
+    width: 60px;
+    height: 3px;
+    background-color: $mainColor;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

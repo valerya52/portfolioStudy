@@ -1,0 +1,27 @@
+.experience {
+  .table {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 70px;
+    &__col {
+      width: 500px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 35px;
+      &:before {
+        position: absolute;
+        margin-left: -50px;
+        margin-top: 6px;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: $mainColor;
+        border-radius: 100%;
+
+      }
+    }
+  }
+}

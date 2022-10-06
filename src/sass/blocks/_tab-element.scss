@@ -1,0 +1,61 @@
+.tab-element {
+  margin: 45px 0 0 38px;
+
+  ul {
+    list-style: none;
+    li{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "";
+        height: calc(100% + 53px);
+        width: 1px;
+        background-color: black;
+        top: -53px;
+        left: -46px;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 44px;
+        background-color: #000;
+        top: 11px;
+        left: -44px;
+      }
+    }
+  }
+  &__img {
+    margin-right: 20px;
+    position: relative;
+    @include before_circle;
+    &:before {
+      top: -5px;
+    }
+    img {
+      padding-top: 10px;
+      margin-left: 15px;
+    }
+  }
+  &__title-wrapper {
+    margin-top: -6px;
+    h4 {
+      font-size: 14px;
+    }
+    h5 {
+      margin-top: -7px;
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+  &__header {
+    display: flex;
+  }
+  p {
+    margin-top: 9px;
+    width: 375px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

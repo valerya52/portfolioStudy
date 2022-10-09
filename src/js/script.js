@@ -11,3 +11,14 @@ close.forEach((e) => {
         menu.classList.remove('active');
     });
 });
+
+
+const persent = document.querySelectorAll('.item-range__percent'),
+      rangeLine = document.querySelectorAll('.item-range__inner-line');
+
+console.log(persent);
+
+persent.forEach( (e, i) => {
+    console.log(e);
+    rangeLine[i].style.width = e.innerHTML;
+});

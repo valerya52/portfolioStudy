@@ -1,0 +1,23 @@
+.item-range {
+  display: grid;
+  width: 350px;
+  grid-template-columns: 200px 35px;
+  grid-template-rows: 21px 14px;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-row-gap: 27px;
+  &__line{
+    grid-column: 1/3;
+    width: 100%;
+    height: 14px;
+    background: #E8E4DE;
+    border-radius: 4px;
+  }
+  &__inner-line {
+    width: 75%;
+    height: 14px;
+    background: #FFA501;
+    border-radius: 4px;
+
+  }
+}

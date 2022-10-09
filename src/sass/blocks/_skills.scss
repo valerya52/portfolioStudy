@@ -8,4 +8,11 @@
     grid-gap: 13px;
     grid-auto-rows: auto;
   }
+
+  &__range {
+    padding-top: 125px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 40px;
+  }
 }

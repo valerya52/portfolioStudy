@@ -1,0 +1,15 @@
+.title-second {
+  h1 {
+    padding-left: 12px;
+    & {
+      position: relative;
+      @include before_circle;
+      &:before {
+        top: 0;
+      }
+    }
+  }
+  h2 {
+    font-size: 36px;
+  }
+}

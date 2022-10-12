@@ -12,4 +12,14 @@
   h2 {
     font-size: 36px;
   }
+
+  &__divider {
+    margin-bottom: 25px;
+    margin-top: -10px;
+    position: relative;
+    width: 60px;
+    height: 3px;
+    background-color: $mainColor;
+
+  }
 }

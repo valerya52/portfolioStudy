@@ -86,6 +86,7 @@
                     <div class="title-second">
                         <h1>Про меня</h1>
                         <h2>Меня зовут Александра</h2>
+                        <div class="title-second__divider"></div>
                     </div>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -389,7 +390,58 @@
 
             </div>
         </div>
+    </section>
 
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__col"><img src="img/main_photo.jpg"></div>
+                <div class="contacts__col">
+                    <div class="title-second">
+                        <h1>Контакты</h1>
+                        <h2>Свяжитесь со мной</h2>
+                        <div class="title-second__divider"></div>
+                    </div>
+                    <div class="contacts__text">
+                        Любым удобным для вас способом:
+                    </div>
+                    <div class="contacts__social">
+                        <div class="contacts__item">
+                            <div class="contacts__img"><img src="icons/contacts_social/facebook.svg" alt="facebook"></div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__img"><img src="icons/contacts_social/telegram.svg" alt="telegram"></div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__img"><img src="icons/contacts_social/instagram.svg" alt="instagram"></div>
+                        </div>
+                    </div>
+
+                    <div class="contacts__text">Или оставьте ваши данные и я сама вам напишу:
+                    </div>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required id="name" name="name" type="text" placeholder="Иван">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required type="email" id="email" name="email" >
+                            <label for="email">Ваша почта</label>
+                        </div>
+
+                        <div class="contacts__input-area">
+                            <textarea id="text" name="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div>
+                            <button class="contacts__btn">Отправить сообщение</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
